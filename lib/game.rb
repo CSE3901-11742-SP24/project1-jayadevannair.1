@@ -84,8 +84,10 @@ class Game
       3.times do |i|
         print "Index #{i + 1}: "
         input = gets.chomp.to_i
+        indexs[i] = input
       end
 
+      Grid.print_grid(indexs.map { |index| @play_area[index] })
       puts "You entered: #{indexs.join(', ')}"
 
       if !Card.is_set?(@play_area[indexs[0]], @play_area[indexs[0]], @play_area[indexs[0]])
