@@ -42,4 +42,4 @@ This command starts the game. Follow the on-screen instructions to play.
 - Your task is to identify a 'set' of three cards where each feature, when looked at individually, is either all the same on each card or all different.
 - The game offers options to add more cards to the play area, enter a set manually, or get a hint for a set.
 
-Enjoy the game, and may the best pattern recognizer win!
+Enjoy the game!

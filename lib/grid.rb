@@ -10,7 +10,7 @@ class Grid
     # Loops until all cards have been processed and printed.
     until c.empty?
       line = c.shift([6, c.length].min) # Retrieves up to 6 cards from the array to form a line in the grid.
-      
+
       # Initializes an array to hold textual representation of each card.
       cardsText = []
       line.each_with_index do |card, index|
@@ -48,7 +48,8 @@ class Grid
     l1, l2, l3 = Array.new(3) { card_side(card) }
     l2[4..5] = shape if card.number == 1 || card.number == 3
     if card.number == 2 || card.number == 3
-      l1[2..3], l3[6..7] = shape, shape
+      l1[2..3] = shape
+      l3[6..7] = shape
     end
 
     # Constructs the complete card text by concatenating all parts.
